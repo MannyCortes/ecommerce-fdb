@@ -9,7 +9,7 @@ app = FastAPI()
 #"..." tells fastapi not to do anything if not a file type
 async def main(file: UploadFile = File(...)):
     stream = file.file
-    print(stream.filename)
+    return "File uploaded successfully"
 
 
 
